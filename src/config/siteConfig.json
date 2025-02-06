@@ -1,0 +1,84 @@
+{
+  "siteName": "memecoin-site",
+  "coinName": "My Memecoin",
+  "coinSymbol": "$memecoin",
+  "contractAddress": "0x1234567890abcdef",
+  "siteTitle": "Meme Coin - The King of Crypto",
+  "footerDescription": "© 2024 by memecoin, All rights reserved!",
+  "homeDescription": "The most memeable memecoin in existence. The dogs have had their day.",
+  "aboutDescription": "This is your chance to shine! Write an epic and captivating description that truly captures the essence of your memecoin. Be creative, make it unforgettable, and ensure no one can ignore it!",
+  "selectedTheme": "deepSea",
+  "selectedBlockchain": "solana",
+  "tokenSupply": "420,690,000,000,001",
+  "taxes": "No taxes, No Bullshit",
+  "burntLP": "LP tokens are burnt, and contract ownership is renounced.",
+  "backgroundShape":"circle",
+  "blockchainInstructions": {
+    "ethereum": {
+      "steps": [
+        {
+          "icon": "FaWallet",
+          "title": "Create a Wallet",
+          "description": "Download Metamask or your preferred wallet."
+        },
+        {
+          "icon": "FaEthereum",
+          "title": "Get Some ETH",
+          "description": "Fund your wallet with ETH to swap for $memecoin."
+        },
+        {
+          "icon": "FaExchangeAlt",
+          "title": "Go to Uniswap",
+          "description": "Connect your wallet and paste the $memecoin contract address."
+        },
+        {
+          "icon": "FaCheckCircle",
+          "title": "Swap ETH for $memecoin",
+          "description": "Confirm the transaction and enjoy!"
+        }
+      ]
+    },
+    "solana": {
+      "steps": [
+        {
+          "icon": "FaWallet",
+          "title": "Create a Wallet",
+          "description": "Download Phantom wallet or your preferred Solana wallet."
+        },
+        {
+          "icon": "FaMoney",
+          "title": "Get Some SOL",
+          "description": "Fund your wallet with SOL on a platform like Raydium."
+        },
+        {
+          "icon": "FaExchangeAlt",
+          "title": "Go to Raydium",
+          "description": "Connect your wallet and find the $memecoin token."
+        },
+        {
+          "icon": "FaCheckCircle",
+          "title": "Swap SOL for $memecoin",
+          "description": "Confirm the transaction and enjoy!"
+        }
+      ]
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Meme"
+      },
+      {
+        "phase": "Phase 2",
+        "description": "Vibe and HODL"
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Meme Takeover"
+      }
+    ],
+  "disclaimer": "$memecoin has no association with any official entity. This token is simply paying homage to a meme we all love." 
+  }
+}

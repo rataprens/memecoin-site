@@ -1,0 +1,1013 @@
+{
+"themes": {
+    "dark": {
+    "background": "#1e1e1e",
+    "primary": "#f39c12",
+    "text": "#ffffff",
+    "buttonBackground": "#f39c12",
+    "buttonText": "#ffffff"
+    },
+    "light": {
+    "background": "#ffffff",
+    "primary": "#333333",
+    "text": "#000000",
+    "buttonBackground": "#333333",
+    "buttonText": "#ffffff"
+    },
+    "blue": {
+    "background": "#1a237e",
+    "primary": "#ffeb3b",
+    "text": "#ffffff",
+    "buttonBackground": "#ffeb3b",
+    "buttonText": "#1a237e"
+    },
+    "cyberpunk": {
+    "background": "#0f0f0f",
+    "primary": "#ff007f",
+    "text": "#00ffcc",
+    "buttonBackground": "#ff007f",
+    "buttonText": "#0f0f0f"
+    },
+    "solarized": {
+    "background": "#002b36",
+    "primary": "#b58900",
+    "text": "#839496",
+    "buttonBackground": "#b58900",
+    "buttonText": "#002b36"
+    },
+    "neon": {
+    "background": "#0d0d0d",
+    "primary": "#39ff14",
+    "text": "#ffffff",
+    "buttonBackground": "#39ff14",
+    "buttonText": "#0d0d0d"
+    },
+    "pastel": {
+    "background": "#ffe4e1",
+    "primary": "#4682b4",
+    "text": "#333333",
+    "buttonBackground": "#4682b4",
+    "buttonText": "#ffffff"
+    },
+    "matrix": {
+    "background": "#000000",
+    "primary": "#00ff00",
+    "text": "#00ff00",
+    "buttonBackground": "#00ff00",
+    "buttonText": "#000000"
+    },
+    "sunset": {
+    "background": "#ff9a8b",
+    "primary": "#ff6a88",
+    "text": "#2e2e2e",
+    "buttonBackground": "#ff477e",
+    "buttonText": "#ffffff"
+    },
+    "midnight": {
+    "background": "#121212",
+    "primary": "#bb86fc",
+    "text": "#e0e0e0",
+    "buttonBackground": "#bb86fc",
+    "buttonText": "#121212"
+    },
+    "aqua": {
+    "background": "#023047",
+    "primary": "#8ecae6",
+    "text": "#ffffff",
+    "buttonBackground": "#219ebc",
+    "buttonText": "#023047"
+    },
+    "warm": {
+    "background": "#fae1dd",
+    "primary": "#ff5d73",
+    "text": "#6d6875",
+    "buttonBackground": "#ff758f",
+    "buttonText": "#fae1dd"
+    },
+    "forest": {
+    "background": "#2d6a4f",
+    "primary": "#95d5b2",
+    "text": "#ffffff",
+    "buttonBackground": "#40916c",
+    "buttonText": "#ffffff"
+    },
+    "lavender": {
+    "background": "#e6e6fa",
+    "primary": "#6a0572",
+    "text": "#4b0082",
+    "buttonBackground": "#6a0572",
+    "buttonText": "#ffffff"
+    },
+    "storm": {
+    "background": "#232526",
+    "primary": "#414345",
+    "text": "#d3d3d3",
+    "buttonBackground": "#414345",
+    "buttonText": "#ffffff"
+    },
+    "retro": {
+    "background": "#ffcc00",
+    "primary": "#ff0033",
+    "text": "#330000",
+    "buttonBackground": "#ff0033",
+    "buttonText": "#ffcc00"
+    },
+    "space": {
+    "background": "#0b0c10",
+    "primary": "#45a29e",
+    "text": "#c5c6c7",
+    "buttonBackground": "#45a29e",
+    "buttonText": "#0b0c10"
+    },
+    "royal": {
+    "background": "#1a1a40",
+    "primary": "#ffcc29",
+    "text": "#ffffff",
+    "buttonBackground": "#ffcc29",
+    "buttonText": "#1a1a40"
+    },
+    "coffee": {
+    "background": "#4b382a",
+    "primary": "#c69c72",
+    "text": "#f5f5dc",
+    "buttonBackground": "#c69c72",
+    "buttonText": "#4b382a"
+    },
+    "flamingo": {
+    "background": "#f8a1d1",
+    "primary": "#ff6b81",
+    "text": "#4a154b",
+    "buttonBackground": "#ff6b81",
+    "buttonText": "#ffffff"
+    },
+    "deepSea": {
+    "background": "#041f1e",
+    "primary": "#00a896",
+    "text": "#ffffff",
+    "buttonBackground": "#00a896",
+    "buttonText": "#041f1e"
+    },
+    "vaporwave": {
+    "background": "#2a1e5c",
+    "primary": "#ff71ce",
+    "text": "#fff1e8",
+    "buttonBackground": "#ff71ce",
+    "buttonText": "#2a1e5c"
+    },
+    "golden": {
+    "background": "#3e2723",
+    "primary": "#ffd700",
+    "text": "#fff8dc",
+    "buttonBackground": "#ffd700",
+    "buttonText": "#3e2723"
+    },
+    "crimson": {
+    "background": "#3a0000",
+    "primary": "#ff1e56",
+    "text": "#ffffff",
+    "buttonBackground": "#ff1e56",
+    "buttonText": "#3a0000"
+    },
+    "steampunk": {
+    "background": "#4a2c2a",
+    "primary": "#d4a373",
+    "text": "#ffeadb",
+    "buttonBackground": "#d4a373",
+    "buttonText": "#4a2c2a"
+    },
+    "glacier": {
+    "background": "#1e3d59",
+    "primary": "#f5f0e1",
+    "text": "#ffffff",
+    "buttonBackground": "#f5f0e1",
+    "buttonText": "#1e3d59"
+    },
+    "bubblegum": {
+    "background": "#ffdde1",
+    "primary": "#ff88dc",
+    "text": "#3f1651",
+    "buttonBackground": "#ff88dc",
+    "buttonText": "#ffffff"
+    },
+    "desert": {
+    "background": "#c19a6b",
+    "primary": "#8b5a2b",
+    "text": "#4b382a",
+    "buttonBackground": "#8b5a2b",
+    "buttonText": "#ffffff"
+    },
+    "tropical": {
+    "background": "#01796f",
+    "primary": "#ffa07a",
+    "text": "#ffffff",
+    "buttonBackground": "#ffa07a",
+    "buttonText": "#01796f"
+    },
+    "royalty": {
+    "background": "#301934",
+    "primary": "#ffd700",
+    "text": "#e6e6e6",
+    "buttonBackground": "#ffd700",
+    "buttonText": "#301934"
+    },
+    "ghost": {
+    "background": "#1b1b1b",
+    "primary": "#8a8a8a",
+    "text": "#e0e0e0",
+    "buttonBackground": "#8a8a8a",
+    "buttonText": "#1b1b1b"
+    },
+    "mystic": {
+    "background": "#282c35",
+    "primary": "#c792ea",
+    "text": "#ffffff",
+    "buttonBackground": "#c792ea",
+    "buttonText": "#282c35"
+    },
+    "aurora": {
+        "background": "#2e3b4e",
+        "primary": "#a8d0e6",
+        "text": "#f0f4f8",
+        "buttonBackground": "#a8d0e6",
+        "buttonText": "#2e3b4e"
+      },
+      "ember": {
+        "background": "#3e2723",
+        "primary": "#ff7043",
+        "text": "#ffffff",
+        "buttonBackground": "#ff7043",
+        "buttonText": "#3e2723"
+      },
+      "jungle": {
+        "background": "#2b6e4f",
+        "primary": "#2a9d8f",
+        "text": "#ffffff",
+        "buttonBackground": "#2a9d8f",
+        "buttonText": "#2b6e4f"
+      },
+      "mysticMoon": {
+        "background": "#1b1f3b",
+        "primary": "#5b6e8e",
+        "text": "#e5e5e5",
+        "buttonBackground": "#5b6e8e",
+        "buttonText": "#1b1f3b"
+      },
+      "tropicalDream": {
+        "background": "#056b56",
+        "primary": "#f4c542",
+        "text": "#ffffff",
+        "buttonBackground": "#f4c542",
+        "buttonText": "#056b56"
+      },
+      "neonLights": {
+        "background": "#0d0d0d",
+        "primary": "#ff00ff",
+        "text": "#00ffff",
+        "buttonBackground": "#ff00ff",
+        "buttonText": "#0d0d0d"
+      },
+      "sunsetGlow": {
+        "background": "#ff6f61",
+        "primary": "#ffb7b2",
+        "text": "#f1f1f1",
+        "buttonBackground": "#ffb7b2",
+        "buttonText": "#ff6f61"
+      },
+      "arctic": {
+        "background": "#add8e6",
+        "primary": "#4682b4",
+        "text": "#ffffff",
+        "buttonBackground": "#4682b4",
+        "buttonText": "#add8e6"
+      },
+      "vintage": {
+        "background": "#f4f1de",
+        "primary": "#7a6c61",
+        "text": "#4a403a",
+        "buttonBackground": "#7a6c61",
+        "buttonText": "#f4f1de"
+      },
+      "citrus": {
+        "background": "#ffcc00",
+        "primary": "#ff9900",
+        "text": "#ffffff",
+        "buttonBackground": "#ff9900",
+        "buttonText": "#ffcc00"
+      },
+      "serenity": {
+        "background": "#b0e0e6",
+        "primary": "#4682b4",
+        "text": "#000000",
+        "buttonBackground": "#4682b4",
+        "buttonText": "#b0e0e6"
+      },
+      "lavenderDreams": {
+        "background": "#e6e6fa",
+        "primary": "#dda0dd",
+        "text": "#4b0082",
+        "buttonBackground": "#dda0dd",
+        "buttonText": "#e6e6fa"
+      },
+      "cosmic": {
+        "background": "#000000",
+        "primary": "#6a5acd",
+        "text": "#ffffff",
+        "buttonBackground": "#6a5acd",
+        "buttonText": "#000000"
+      },
+      "cherryBlossom": {
+        "background": "#ffb7b2",
+        "primary": "#e2a0b5",
+        "text": "#4b0082",
+        "buttonBackground": "#e2a0b5",
+        "buttonText": "#ffb7b2"
+      },
+      "mistyForest": {
+        "background": "#2f4f4f",
+        "primary": "#98fb98",
+        "text": "#ffffff",
+        "buttonBackground": "#98fb98",
+        "buttonText": "#2f4f4f"
+      },
+      "autumnLeaves": {
+        "background": "#ff7f50",
+        "primary": "#ff6347",
+        "text": "#fff8dc",
+        "buttonBackground": "#ff6347",
+        "buttonText": "#ff7f50"
+      },
+      "midnightBlue": {
+        "background": "#191970",
+        "primary": "#00bfff",
+        "text": "#ffffff",
+        "buttonBackground": "#00bfff",
+        "buttonText": "#191970"
+      },
+      "mangoTango": {
+        "background": "#ffcc00",
+        "primary": "#ff6600",
+        "text": "#ffffff",
+        "buttonBackground": "#ff6600",
+        "buttonText": "#ffcc00"
+      },
+      "oceanBreeze": {
+        "background": "#0077be",
+        "primary": "#00bfff",
+        "text": "#ffffff",
+        "buttonBackground": "#00bfff",
+        "buttonText": "#0077be"
+      },
+      "chocolate": {
+        "background": "#3e2723",
+        "primary": "#6d4c41",
+        "text": "#fff8e1",
+        "buttonBackground": "#6d4c41",
+        "buttonText": "#3e2723"
+      },
+      "pumpkinSpice": {
+        "background": "#ff7f32",
+        "primary": "#d84b16",
+        "text": "#ffffff",
+        "buttonBackground": "#d84b16",
+        "buttonText": "#ff7f32"
+      },
+      "frosty": {
+        "background": "#f5f5f5",
+        "primary": "#b0e0e6",
+        "text": "#000000",
+        "buttonBackground": "#b0e0e6",
+        "buttonText": "#f5f5f5"
+      },
+      "moonlitNight": {
+        "background": "#2f4f4f",
+        "primary": "#2e8b57",
+        "text": "#ffffff",
+        "buttonBackground": "#2e8b57",
+        "buttonText": "#2f4f4f"
+      },
+      "wildflower": {
+        "background": "#fff5e1",
+        "primary": "#ff5722",
+        "text": "#3e2723",
+        "buttonBackground": "#ff5722",
+        "buttonText": "#fff5e1"
+      },
+      "pineforest": {
+        "background": "#2e8b57",
+        "primary": "#3cb371",
+        "text": "#ffffff",
+        "buttonBackground": "#3cb371",
+        "buttonText": "#2e8b57"
+      },
+      "neptune": {
+        "background": "#000080",
+        "primary": "#00bfff",
+        "text": "#ffffff",
+        "buttonBackground": "#00bfff",
+        "buttonText": "#000080"
+      },
+      "papaya": {
+        "background": "#ffcc00",
+        "primary": "#ff6600",
+        "text": "#ffffff",
+        "buttonBackground": "#ff6600",
+        "buttonText": "#ffcc00"
+      },
+      "plumeria": {
+        "background": "#f0e68c",
+        "primary": "#ffa07a",
+        "text": "#333333",
+        "buttonBackground": "#ffa07a",
+        "buttonText": "#f0e68c"
+      },
+      "goldRush": {
+        "background": "#d4af37",
+        "primary": "#f5c300",
+        "text": "#000000",
+        "buttonBackground": "#f5c300",
+        "buttonText": "#d4af37"
+      },
+      "vividBlue": {
+        "background": "#0066cc",
+        "primary": "#0099ff",
+        "text": "#ffffff",
+        "buttonBackground": "#0099ff",
+        "buttonText": "#0066cc"
+      },
+      "fieryRed": {
+        "background": "#d32f2f",
+        "primary": "#e57373",
+        "text": "#ffffff",
+        "buttonBackground": "#e57373",
+        "buttonText": "#d32f2f"
+      },
+      "sage": {
+        "background": "#a8bfa3",
+        "primary": "#8a9a5b",
+        "text": "#ffffff",
+        "buttonBackground": "#8a9a5b",
+        "buttonText": "#a8bfa3"
+      },
+      "cobalt": {
+        "background": "#0047ab",
+        "primary": "#3c8d99",
+        "text": "#ffffff",
+        "buttonBackground": "#3c8d99",
+        "buttonText": "#0047ab"
+      },
+      "roseWood": {
+        "background": "#b94e4e",
+        "primary": "#9e2a2f",
+        "text": "#ffffff",
+        "buttonBackground": "#9e2a2f",
+        "buttonText": "#b94e4e"
+      },
+      "nightSky": {
+        "background": "#2c3e50",
+        "primary": "#3498db",
+        "text": "#ffffff",
+        "buttonBackground": "#3498db",
+        "buttonText": "#2c3e50"
+      },
+      "blush": {
+        "background": "#f2c6c6",
+        "primary": "#f9a1a1",
+        "text": "#000000",
+        "buttonBackground": "#f9a1a1",
+        "buttonText": "#f2c6c6"
+      },
+      "crystalClear": {
+        "background": "#a2dff7",
+        "primary": "#54a0d3",
+        "text": "#ffffff",
+        "buttonBackground": "#54a0d3",
+        "buttonText": "#a2dff7"
+      },
+      "minty": {
+        "background": "#98ff98",
+        "primary": "#00e676",
+        "text": "#ffffff",
+        "buttonBackground": "#00e676",
+        "buttonText": "#98ff98"
+      },
+      "saffron": {
+        "background": "#f4c542",
+        "primary": "#f9a825",
+        "text": "#ffffff",
+        "buttonBackground": "#f9a825",
+        "buttonText": "#f4c542"
+      },
+      "violetStorm": {
+        "background": "#9b4d96",
+        "primary": "#c2185b",
+        "text": "#ffffff",
+        "buttonBackground": "#c2185b",
+        "buttonText": "#9b4d96"
+      },
+      "starryNight": {
+        "background": "#2e2e2e",
+        "primary": "#ff8c00",
+        "text": "#ffffff",
+        "buttonBackground": "#ff8c00",
+        "buttonText": "#2e2e2e"
+      },
+      "midnightSun": {
+        "background": "#021b1b",
+        "primary": "#f2b900",
+        "text": "#ffffff",
+        "buttonBackground": "#f2b900",
+        "buttonText": "#021b1b"
+      },
+      "poppy": {
+        "background": "#ff4f58",
+        "primary": "#ff8f56",
+        "text": "#ffffff",
+        "buttonBackground": "#ff8f56",
+        "buttonText": "#ff4f58"
+      },
+      "peachBlossom": {
+        "background": "#ffcc99",
+        "primary": "#ff9966",
+        "text": "#333333",
+        "buttonBackground": "#ff9966",
+        "buttonText": "#ffcc99"
+      },
+      "coralReef": {
+        "background": "#ff6f61",
+        "primary": "#ff8e53",
+        "text": "#ffffff",
+        "buttonBackground": "#ff8e53",
+        "buttonText": "#ff6f61"
+      },
+      "greenery": {
+        "background": "#6dbf3a",
+        "primary": "#3e8e41",
+        "text": "#ffffff",
+        "buttonBackground": "#3e8e41",
+        "buttonText": "#6dbf3a"
+      },
+      "sandstone": {
+        "background": "#d8a57b",
+        "primary": "#a56d42",
+        "text": "#ffffff",
+        "buttonBackground": "#a56d42",
+        "buttonText": "#d8a57b"
+      },
+      "platinum": {
+        "background": "#e5e5e5",
+        "primary": "#b0b0b0",
+        "text": "#000000",
+        "buttonBackground": "#b0b0b0",
+        "buttonText": "#e5e5e5"
+      },
+      "pear": {
+        "background": "#d1e7b7",
+        "primary": "#7dbe3d",
+        "text": "#ffffff",
+        "buttonBackground": "#7dbe3d",
+        "buttonText": "#d1e7b7"
+      },
+      "almond": {
+        "background": "#f8d7b1",
+        "primary": "#e1c285",
+        "text": "#6c4f3d",
+        "buttonBackground": "#e1c285",
+        "buttonText": "#f8d7b1"
+      },
+      "lavenderFields": {
+        "background": "#e6e6fa",
+        "primary": "#dda0dd",
+        "text": "#000000",
+        "buttonBackground": "#dda0dd",
+        "buttonText": "#e6e6fa"
+      },
+      "aquaMarine": {
+        "background": "#7fffd4",
+        "primary": "#48c9b0",
+        "text": "#000000",
+        "buttonBackground": "#48c9b0",
+        "buttonText": "#7fffd4"
+      },
+      "sunflower": {
+        "background": "#ffec47",
+        "primary": "#f4a300",
+        "text": "#ffffff",
+        "buttonBackground": "#f4a300",
+        "buttonText": "#ffec47"
+      },
+      "tulip": {
+        "background": "#ff00ff",
+        "primary": "#ff99cc",
+        "text": "#ffffff",
+        "buttonBackground": "#ff99cc",
+        "buttonText": "#ff00ff"
+      },
+      "emerald": {
+        "background": "#2ecc71",
+        "primary": "#1abc9c",
+        "text": "#ffffff",
+        "buttonBackground": "#1abc9c",
+        "buttonText": "#2ecc71"
+      },
+      "royalBlue": {
+        "background": "#4169e1",
+        "primary": "#1e3a8a",
+        "text": "#ffffff",
+        "buttonBackground": "#1e3a8a",
+        "buttonText": "#4169e1"
+      },
+      "sunsetOrange": {
+        "background": "#fd5e53",
+        "primary": "#ff5722",
+        "text": "#ffffff",
+        "buttonBackground": "#ff5722",
+        "buttonText": "#fd5e53"
+      },
+      "seaFoam": {
+        "background": "#93f2be",
+        "primary": "#00bfae",
+        "text": "#000000",
+        "buttonBackground": "#00bfae",
+        "buttonText": "#93f2be"
+      },
+      "tangerine": {
+        "background": "#ff9e00",
+        "primary": "#ff6f00",
+        "text": "#ffffff",
+        "buttonBackground": "#ff6f00",
+        "buttonText": "#ff9e00"
+      },
+      "burntSienna": {
+        "background": "#e97451",
+        "primary": "#e35d34",
+        "text": "#ffffff",
+        "buttonBackground": "#e35d34",
+        "buttonText": "#e97451"
+      },
+      "turquoise": {
+        "background": "#40e0d0",
+        "primary": "#0fa3b1",
+        "text": "#ffffff",
+        "buttonBackground": "#0fa3b1",
+        "buttonText": "#40e0d0"
+      },
+      "moonlit": {
+        "background": "#484848",
+        "primary": "#8a8a8a",
+        "text": "#ffffff",
+        "buttonBackground": "#8a8a8a",
+        "buttonText": "#484848"
+      },
+      "fuchsia": {
+        "background": "#c71585",
+        "primary": "#ff1493",
+        "text": "#ffffff",
+        "buttonBackground": "#ff1493",
+        "buttonText": "#c71585"
+      },
+      "peacock": {
+        "background": "#1d9b6c",
+        "primary": "#006747",
+        "text": "#ffffff",
+        "buttonBackground": "#006747",
+        "buttonText": "#1d9b6c"
+      },
+      "periwinkle": {
+        "background": "#ccccff",
+        "primary": "#8a82b9",
+        "text": "#000000",
+        "buttonBackground": "#8a82b9",
+        "buttonText": "#ccccff"
+      },
+      "autumn": {
+        "background": "#ff9800",
+        "primary": "#f57c00",
+        "text": "#ffffff",
+        "buttonBackground": "#f57c00",
+        "buttonText": "#ff9800"
+      },
+      "indigo": {
+        "background": "#4b0082",
+        "primary": "#2e004e",
+        "text": "#ffffff",
+        "buttonBackground": "#2e004e",
+        "buttonText": "#4b0082"
+      },
+      "buttercup": {
+        "background": "#f1c40f",
+        "primary": "#f39c12",
+        "text": "#ffffff",
+        "buttonBackground": "#f39c12",
+        "buttonText": "#f1c40f"
+      },
+      "slateGray": {
+        "background": "#708090",
+        "primary": "#2f4f4f",
+        "text": "#ffffff",
+        "buttonBackground": "#2f4f4f",
+        "buttonText": "#708090"
+      },
+      "cranberry": {
+        "background": "#9e1b32",
+        "primary": "#b93148",
+        "text": "#ffffff",
+        "buttonBackground": "#b93148",
+        "buttonText": "#9e1b32"
+      },
+      "plum": {
+        "background": "#8e4585",
+        "primary": "#5f2a7f",
+        "text": "#ffffff",
+        "buttonBackground": "#5f2a7f",
+        "buttonText": "#8e4585"
+      },
+      "watermelon": {
+        "background": "#ff5c8d",
+        "primary": "#ff0066",
+        "text": "#ffffff",
+        "buttonBackground": "#ff0066",
+        "buttonText": "#ff5c8d"
+      },
+      "lavenderMist": {
+        "background": "#e3e4fa",
+        "primary": "#7f5cc5",
+        "text": "#000000",
+        "buttonBackground": "#7f5cc5",
+        "buttonText": "#e3e4fa"
+      },
+      "chartreuse": {
+        "background": "#7fff00",
+        "primary": "#4caf50",
+        "text": "#000000",
+        "buttonBackground": "#4caf50",
+        "buttonText": "#7fff00"
+      },
+      "brass": {
+        "background": "#b5a642",
+        "primary": "#f1c40f",
+        "text": "#ffffff",
+        "buttonBackground": "#f1c40f",
+        "buttonText": "#b5a642"
+      },
+      "blushPink": {
+        "background": "#ffb6c1",
+        "primary": "#f79c42",
+        "text": "#000000",
+        "buttonBackground": "#f79c42",
+        "buttonText": "#ffb6c1"
+      },
+      "iceBlue": {
+        "background": "#f0f8ff",
+        "primary": "#00bfff",
+        "text": "#000000",
+        "buttonBackground": "#00bfff",
+        "buttonText": "#f0f8ff"
+      },
+      "smokeGray": {
+        "background": "#f4f4f4",
+        "primary": "#b0b0b0",
+        "text": "#000000",
+        "buttonBackground": "#b0b0b0",
+        "buttonText": "#f4f4f4"
+      },
+      "bricks": {
+        "background": "#b2303f",
+        "primary": "#d66752",
+        "text": "#ffffff",
+        "buttonBackground": "#d66752",
+        "buttonText": "#b2303f"
+      },
+      "creamyBeige": {
+        "background": "#f5f5dc",
+        "primary": "#b5a57a",
+        "text": "#000000",
+        "buttonBackground": "#b5a57a",
+        "buttonText": "#f5f5dc"
+      },
+      "blossom": {
+        "background": "#ff82ab",
+        "primary": "#ff4d6d",
+        "text": "#ffffff",
+        "buttonBackground": "#ff4d6d",
+        "buttonText": "#ff82ab"
+      },
+      "lemonade": {
+        "background": "#fff44f",
+        "primary": "#f4c300",
+        "text": "#000000",
+        "buttonBackground": "#f4c300",
+        "buttonText": "#fff44f"
+      },
+      "salmon": {
+        "background": "#fa8072",
+        "primary": "#e65c5c",
+        "text": "#ffffff",
+        "buttonBackground": "#e65c5c",
+        "buttonText": "#fa8072"
+      },
+      "nightfall": {
+        "background": "#2f4f4f",
+        "primary": "#00ced1",
+        "text": "#ffffff",
+        "buttonBackground": "#00ced1",
+        "buttonText": "#2f4f4f"
+      },
+      "desertRose": {
+      "background": "#e9c2b3",
+      "primary": "#d08a6f",
+      "text": "#000000",
+      "buttonBackground": "#d08a6f",
+      "buttonText": "#e9c2b3"
+    },
+    "cobaltBlue": {
+      "background": "#0047ab",
+      "primary": "#1e3a8a",
+      "text": "#ffffff",
+      "buttonBackground": "#1e3a8a",
+      "buttonText": "#0047ab"
+    },
+    "raspberry": {
+      "background": "#e30b5c",
+      "primary": "#9b1b30",
+      "text": "#ffffff",
+      "buttonBackground": "#9b1b30",
+      "buttonText": "#e30b5c"
+    },
+    "jade": {
+      "background": "#00a86b",
+      "primary": "#006747",
+      "text": "#ffffff",
+      "buttonBackground": "#006747",
+      "buttonText": "#00a86b"
+    },
+    "dustyRose": {
+      "background": "#dcb4a6",
+      "primary": "#d08a6f",
+      "text": "#ffffff",
+      "buttonBackground": "#d08a6f",
+      "buttonText": "#dcb4a6"
+    },
+    "teal": {
+      "background": "#008080",
+      "primary": "#004d40",
+      "text": "#ffffff",
+      "buttonBackground": "#004d40",
+      "buttonText": "#008080"
+    },
+    "crimsonRed": {
+      "background": "#dc143c",
+      "primary": "#a50021",
+      "text": "#ffffff",
+      "buttonBackground": "#a50021",
+      "buttonText": "#dc143c"
+    },
+    "mintGreen": {
+      "background": "#98ff98",
+      "primary": "#00d173",
+      "text": "#000000",
+      "buttonBackground": "#00d173",
+      "buttonText": "#98ff98"
+    },
+    "lavenderBlush": {
+      "background": "#fff0f5",
+      "primary": "#e6a9b7",
+      "text": "#000000",
+      "buttonBackground": "#e6a9b7",
+      "buttonText": "#fff0f5"
+    },
+    "amber": {
+      "background": "#ffbf00",
+      "primary": "#ff8c00",
+      "text": "#ffffff",
+      "buttonBackground": "#ff8c00",
+      "buttonText": "#ffbf00"
+    },
+    "onyx": {
+      "background": "#353535",
+      "primary": "#101010",
+      "text": "#ffffff",
+      "buttonBackground": "#101010",
+      "buttonText": "#353535"
+    },
+    "vividViolet": {
+      "background": "#9b4d96",
+      "primary": "#6a2d92",
+      "text": "#ffffff",
+      "buttonBackground": "#6a2d92",
+      "buttonText": "#9b4d96"
+    },
+    "candyPink": {
+      "background": "#ff69b4",
+      "primary": "#ff1493",
+      "text": "#ffffff",
+      "buttonBackground": "#ff1493",
+      "buttonText": "#ff69b4"
+    },
+    "electricBlue": {
+      "background": "#00ffff",
+      "primary": "#1e90ff",
+      "text": "#000000",
+      "buttonBackground": "#1e90ff",
+      "buttonText": "#00ffff"
+    },
+    "paleTurquoise": {
+      "background": "#afeeee",
+      "primary": "#5f9ea0",
+      "text": "#000000",
+      "buttonBackground": "#5f9ea0",
+      "buttonText": "#afeeee"
+    },
+    "charcoal": {
+      "background": "#36454f",
+      "primary": "#2f4f4f",
+      "text": "#ffffff",
+      "buttonBackground": "#2f4f4f",
+      "buttonText": "#36454f"
+    },
+    "yellowGreen": {
+      "background": "#9acd32",
+      "primary": "#7d7f0b",
+      "text": "#ffffff",
+      "buttonBackground": "#7d7f0b",
+      "buttonText": "#9acd32"
+    },
+    "salmonPink": {
+      "background": "#ff91a4",
+      "primary": "#ff637d",
+      "text": "#ffffff",
+      "buttonBackground": "#ff637d",
+      "buttonText": "#ff91a4"
+    },
+    "orchid": {
+      "background": "#da70d6",
+      "primary": "#9400d3",
+      "text": "#ffffff",
+      "buttonBackground": "#9400d3",
+      "buttonText": "#da70d6"
+    },
+    "forestGreen": {
+      "background": "#228b22",
+      "primary": "#006400",
+      "text": "#ffffff",
+      "buttonBackground": "#006400",
+      "buttonText": "#228b22"
+    },
+    "cherryRed": {
+      "background": "#d2042d",
+      "primary": "#9b111e",
+      "text": "#ffffff",
+      "buttonBackground": "#9b111e",
+      "buttonText": "#d2042d"
+    },
+    "sunflowerYellow": {
+      "background": "#ffda03",
+      "primary": "#f4c300",
+      "text": "#000000",
+      "buttonBackground": "#f4c300",
+      "buttonText": "#ffda03"
+    },
+    "darkMagenta": {
+      "background": "#8b008b",
+      "primary": "#800080",
+      "text": "#ffffff",
+      "buttonBackground": "#800080",
+      "buttonText": "#8b008b"
+    },
+    "frenchBlue": {
+      "background": "#0072bb",
+      "primary": "#0054a6",
+      "text": "#ffffff",
+      "buttonBackground": "#0054a6",
+      "buttonText": "#0072bb"
+    },
+    "zestyOrange": {
+      "background": "#ff6f20",
+      "primary": "#f57c00",
+      "text": "#ffffff",
+      "buttonBackground": "#f57c00",
+      "buttonText": "#ff6f20"
+    },
+    "cloudySky": {
+      "background": "#c9d6df",
+      "primary": "#6c7a89",
+      "text": "#000000",
+      "buttonBackground": "#6c7a89",
+      "buttonText": "#c9d6df"
+    },
+    "raspberrySorbet": {
+      "background": "#ff5071",
+      "primary": "#db3556",
+      "text": "#ffffff",
+      "buttonBackground": "#db3556",
+      "buttonText": "#ff5071"
+    },
+    "neonPink": {
+      "background": "#ff10f0",
+      "primary": "#e60073",
+      "text": "#ffffff",
+      "buttonBackground": "#e60073",
+      "buttonText": "#ff10f0"
+    }
+    
+}
+}
