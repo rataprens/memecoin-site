@@ -1,49 +1,63 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
 
-## 🚀 Quick start
+# Memecoin Site Template
 
-1.  **Create a Gatsby site.**
+This is a starter template for creating customizable memecoin websites. It uses Gatsby with TypeScript, Styled Components, and essential plugins like responsive images, sitemap generation, and Markdown support.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+## Features
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+- **Gatsby with TypeScript**: A fast static site generator with TypeScript for type safety.
+- **Styled Components**: Easily manage your styles with styled-components.
+- **Responsive Design**: Built-in responsive images and layouts.
+- **SEO Optimized**: Sitemap generation and SEO-friendly setups.
+- **Markdown Support**: Add content easily with markdown files.
 
-2.  **Start developing.**
+## Getting Started
 
-    Navigate into your new site’s directory and start it up.
+You can create a new site based on this template by using the `create-memecoin-site` command.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+### 1. Clone the Repository
 
-3.  **Open the code and start customizing!**
+```bash
+npx create-memecoin-site my-memecoin-site
+```
 
-    Your site is now running at http://localhost:8000!
+### 2. Navigate to Your Project
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+```bash
+cd my-memecoin-site
+```
 
-4.  **Learn more**
+### 3. Install Dependencies
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+```bash
+npm install
+```
 
-## 🚀 Quick start (Netlify)
+### 4. Run Development Server
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+```bash
+npm run develop
+```
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Your site will be running at `http://localhost:8000`.
+
+## Customization
+
+- **src/pages/index.tsx**: Edit this file to modify the content of your homepage.
+- **src/styles**: Customize the global styles for your site.
+- **src/images**: Add any images (like your memecoin logo) to the images folder.
+
+## Deploy
+
+To deploy your site, you can use services like Netlify or Vercel.
+
+### Deploy to Netlify
+
+Click the button below to deploy this starter template to Netlify:
+
+[Deploy to Netlify](https://app.netlify.com/start)
+
+## Learn More
+
+- [Gatsby Documentation](https://www.gatsbyjs.com/docs/)
+- [Styled Components Documentation](https://styled-components.com/docs)
