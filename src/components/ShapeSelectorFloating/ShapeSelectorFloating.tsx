@@ -119,6 +119,9 @@ const ShapeSelectorFloating: React.FC<ShapeSelectorProps> = ({ onShapeChange }) 
     setSelectedShape(shape);
     onShapeChange(shape);  // Emitir el valor de la forma seleccionada
     setIsOpen(false);
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   };
 
   useEffect(() => {

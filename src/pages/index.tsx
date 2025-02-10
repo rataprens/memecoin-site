@@ -11,12 +11,22 @@ import Footer from "../components/Footer/Footer";
 import ThemeSelectorFloating from "../components/ThemeSelectorFloating/ThemeSelectorFloating";
 import AnimatedBackground from "../components/AnimateBackground/AnimateBackground";
 import ShapeSelectorFloating from "../components/ShapeSelectorFloating/ShapeSelectorFloating";
+import ClearStorageButton from "../components/ClearStorageButton/ClearStorageButton";
+import MarqueeText from "../components/MarqueeText/MarqueeText";
 
 // Definir la interfaz del tema para tener una mejor seguridad de tipos
 interface Theme {
   background: string;
   text: string;
 }
+
+const StyledMarqueeContainer = styled.div`
+  position: relative;
+  width: 99vw; /* Ocupar todo el ancho de la pantalla */
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom:5.5rem;
+`;
 
 // Establecer valores predeterminados en caso de que no se pase un tema
 const defaultTheme: Theme = {
@@ -71,6 +81,17 @@ const IndexPage: React.FC = () => {
       <Header />
       <Main>
         <HomeSection id="home" />
+        <StyledMarqueeContainer>
+          <MarqueeText
+            textList={[
+              "🚀 New Features Released!",
+              "🔥 Hot Deals Available Now!",
+              "🌟 Join Our Community!",
+              "🎉 Don't Miss Out!"
+            ]}
+            speed={12}
+          />
+        </StyledMarqueeContainer>
         <AboutSection id="about" />
         <HowToBuySection id="how-to-buy" />
         <TokenomicsSection id="tokenomics" />
@@ -79,6 +100,7 @@ const IndexPage: React.FC = () => {
       <Footer />
       <ShapeSelectorFloating onShapeChange={handleShapeChange} />
       <ThemeSelectorFloating></ThemeSelectorFloating> {/* comentar en caso de no utilizarlo en produccion */}
+      <ClearStorageButton></ClearStorageButton>
     </>
   );
 };

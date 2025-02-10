@@ -15,7 +15,7 @@ const Section = styled(motion.section)<{ theme: any }>`
     `linear-gradient(135deg, ${props.theme.background}, ${props.theme.primary})`};
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  margin: 90px 0;
+  margin: 90px;
   color: ${(props) => props.theme.text};
   flex-wrap: wrap;
 `;

@@ -105,6 +105,8 @@ const Header: React.FC = () => {
   const config = useConfig();
   const theme = config.theme;
   const siteTitle = config.siteConfig.siteTitle
+  const contractAddress = config.siteConfig.contractAddress;
+  const buyNowUrl = `https://jup.ag/swap/SOL-${contractAddress}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -157,7 +159,7 @@ const Header: React.FC = () => {
             <NavItem onClick={() => handleNavItemClick("roadmap")}>ROADMAP</NavItem>
           </NavLinks>
           <BuyButtonContainer>
-            <BuyButtonNav theme={theme}>Buy Now</BuyButtonNav>
+            <BuyButtonNav onClick={() => window.open(buyNowUrl, "_blank")} theme={theme}>Buy Now</BuyButtonNav>
           </BuyButtonContainer>
         </NavItemsContainer>
       </NavContainer>
