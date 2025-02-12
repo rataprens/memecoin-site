@@ -39,60 +39,69 @@ const getValidHeaderType = (headerType: string): string => {
 };
 
 export const useConfig = () => {
+  // Estado para determinar si estamos en el cliente
+  const [isClient, setIsClient] = useState(false);
+
   // Obtener la configuración desde JSON
   const siteConfig: ISiteConfig = siteConfigJson;
   const siteHeaderConfig = siteHeaderConfigJson;
 
-  // Cargar valores guardados o usar los valores predeterminados
-  const savedTheme = localStorage.getItem("selectedTheme") || siteConfigJson.selectedTheme;
-  const savedShape = localStorage.getItem("selectedShape") || siteConfigJson.backgroundShape;
-  const savedHeaderType = localStorage.getItem("selectedHeaderType") || siteConfigJson.selectedHeader;
-
-  // Estados para el tema, la forma y el tipo de encabezado
-  const [selectedTheme, setSelectedTheme] = useState<string>(savedTheme);
-  const [theme, setTheme] = useState<ITheme>(getValidTheme(savedTheme));
-  const [selectedShape, setSelectedShape] = useState<Shape>(getValidShape(savedShape));
-  const [selectedHeaderType, setSelectedHeaderType] = useState<string>(getValidHeaderType(savedHeaderType));
+  // Cargar valores guardados o usar los valores predeterminados solo en el cliente
+  const [selectedTheme, setSelectedTheme] = useState<string>("");
+  const [theme, setTheme] = useState<ITheme>(themes.dark);
+  const [selectedShape, setSelectedShape] = useState<Shape>("circle");
+  const [selectedHeaderType, setSelectedHeaderType] = useState<string>("default");
 
   // Función para actualizar el tema
   const updateTheme = (themeName: ThemeName) => {
     setSelectedTheme(themeName);
     const newTheme = getValidTheme(themeName);
     setTheme(newTheme);
-    localStorage.setItem("selectedTheme", themeName);
-    window.location.reload();
+    if (isClient) {
+      localStorage.setItem("selectedTheme", themeName);
+      window.location.reload();
+    }
   };
 
   // Función para actualizar la forma
   const updateShape = (shape: Shape) => {
     setSelectedShape(shape);
-    localStorage.setItem("selectedShape", shape);
+    if (isClient) {
+      localStorage.setItem("selectedShape", shape);
+    }
   };
 
   // Función para actualizar el tipo de encabezado
   const updateHeaderType = (headerType: string) => {
     const validHeader = getValidHeaderType(headerType);
     setSelectedHeaderType(validHeader);
-    localStorage.setItem("selectedHeaderType", validHeader);
+    if (isClient) {
+      localStorage.setItem("selectedHeaderType", validHeader);
+    }
   };
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("selectedTheme");
-    if (storedTheme) {
-      setSelectedTheme(storedTheme);
-      setTheme(getValidTheme(storedTheme));
-    }
+    // Asegurarse de que solo se ejecute en el cliente
+    setIsClient(true);
 
-    const storedShape = localStorage.getItem("selectedShape");
-    if (storedShape) {
-      setSelectedShape(getValidShape(storedShape));
-    }
+    if (isClient) {
+      const storedTheme = localStorage.getItem("selectedTheme");
+      if (storedTheme) {
+        setSelectedTheme(storedTheme);
+        setTheme(getValidTheme(storedTheme));
+      }
 
-    const storedHeaderType = localStorage.getItem("selectedHeaderType");
-    if (storedHeaderType) {
-      setSelectedHeaderType(getValidHeaderType(storedHeaderType));
+      const storedShape = localStorage.getItem("selectedShape");
+      if (storedShape) {
+        setSelectedShape(getValidShape(storedShape));
+      }
+
+      const storedHeaderType = localStorage.getItem("selectedHeaderType");
+      if (storedHeaderType) {
+        setSelectedHeaderType(getValidHeaderType(storedHeaderType));
+      }
     }
-  }, []);
+  }, [isClient]);
 
   return {
     siteConfig,
