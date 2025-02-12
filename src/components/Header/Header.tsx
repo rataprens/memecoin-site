@@ -4,30 +4,8 @@ import { motion } from "framer-motion";
 import { useConfig } from "../../hooks/useConfig";
 import headerLogo from "../../images/replace-logo-image.png";
 import siteHeaderConfigJson from "../../config/siteHeaderConfig.json";
-
-// Definir la interfaz para el estilo del encabezado
-interface HeaderStyle {
-  borderRadius?: string;
-  boxShadow?: string;
-  padding?: string;
-  alignItems?: string;
-  justifyContent?: string;
-  borderBottom?: string;
-  border?: string;
-  maxWidth?: string;
-  position?: string;
-  top?:string
-  left?:string
-  transform?:string
-  display?:string
-}
-
-// Definir la interfaz para el tipo de encabezado
-interface HeaderType {
-  name: string;
-  description: string;
-  style: HeaderStyle;
-}
+import IHeaderStyle from "../../interfaces/IHeaderStyle"
+import IHeaderType from "../../interfaces/IHeaderType"
 
 // Componente para el logo
 const Logo = styled.img`
@@ -37,7 +15,7 @@ const Logo = styled.img`
 `;
 
 // Componente Nav estilizado con styled-components y Framer Motion
-const Nav = styled(motion.nav)<{ theme: any; headerStyle: HeaderStyle }>`
+const Nav = styled(motion.nav)<{ theme: any; headerStyle: IHeaderStyle }>`
   position: ${(props)=> props.headerStyle.position};
   top: ${(props)=> props.headerStyle.top};
   left: ${(props)=> props.headerStyle.left};
@@ -52,6 +30,7 @@ const Nav = styled(motion.nav)<{ theme: any; headerStyle: HeaderStyle }>`
   display: ${(props)=> props.headerStyle.display};
   align-items: ${(props) => props.headerStyle.alignItems};
   justify-content: ${(props) => props.headerStyle.justifyContent};
+  margin-bottom: ${(props)=> props.headerStyle.marginBottom};
   z-index: 1000;
 `;
 
@@ -139,8 +118,10 @@ const Header: React.FC = () => {
 
   // Obtener el estilo del encabezado seleccionado
   const selectedHeaderStyle = headerConfig.find(
-    (header: HeaderType) => header.name === selectedHeaderType
+    (header: IHeaderType) => header.name === selectedHeaderType
   )?.style;
+
+  const navAnimation = selectedHeaderStyle?.navAnimation
 
   useEffect(() => {
     const handleScroll = () => {
@@ -165,12 +146,13 @@ const Header: React.FC = () => {
     <Nav
       theme={theme}
       headerStyle={selectedHeaderStyle || headerConfig[0].style} // Usar el estilo seleccionado o el predeterminado
-      initial={{ width: "90vw", padding: "1.5rem 3rem" }}
+      initial={navAnimation?.initial}
       animate={{
-        width: isScrolled ? "calc(100% - 40px)" : "90vw",
-        padding: isScrolled ? "1rem 2rem" : "1.5rem 3rem",
+        ...navAnimation?.animate,
+        width: isScrolled ? navAnimation?.animate.width : navAnimation?.initial.width,
+        padding: isScrolled ? navAnimation?.animate.padding : navAnimation?.initial.padding,
       }}
-      transition={{ duration: 0.3 }}
+      transition={navAnimation?.transition}
     >
       <NavContainer>
         <TitleContainer>

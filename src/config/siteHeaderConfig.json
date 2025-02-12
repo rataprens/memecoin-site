@@ -1,77 +1,108 @@
 {
-    "headerTypes": [
-      {
-        "name": "default",
-        "description": "Estilo de encabezado estándar",
-        "style": {
-          "borderRadius": "20px",
-          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.15)",
-          "padding": "1.5rem 3rem",
-          "alignItems": "center",
-          "justifyContent": "space-between",
-          "border":"0.1px solid",
-          "maxWidth":"1600px",
-          "position": "fixed",
-          "top": "15px",
-          "left": "50%",
-          "transform": "translateX(-50%)",
-          "display": "flex"
-        }
-      },
-      {
-        "name": "minimal",
-        "description": "Encabezado minimalista con borde inferior",
-        "style": {
-          "borderRadius": "10px",
-          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.12)",
-          "padding": "0 1.5rem",
-          "alignItems": "center",
-          "justifyContent": "flex-start",
-          "border":"1px solid",
-          "maxWidth":"1500px",
-          "position": "fixed",
-          "top": "15px",
-          "left": "50%",
-          "transform": "translateX(-50%)",
-          "display": "flex"
-        }
-      },
-      {
-        "name": "compact",
-        "description": "Encabezado compacto con logo grande",
-        "style": {
-          "borderRadius": "12px",
-          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.2)",
-          "padding": "0 1rem",
-          "alignItems": "center",
-          "justifyContent": "center",
-          "border":"3px solid",
-          "maxWidth":"1400px",
-          "position": "fixed",
-          "top": "15px",
-          "left": "50%",
-          "transform": "translateX(-50%)",
-          "display": "flex"
-        }
-      },
-      {
-        "name": "extended",
-        "description": "Encabezado más grande con espacio extra",
-        "style": {
-          "borderRadius": "50px",
-          "boxShadow": "0 6px 12px rgba(0, 0, 0, 0.1)",
-          "padding": "0 3rem",
-          "alignItems": "center",
-          "justifyContent": "space-between",
-          "border":"5px solid",
-          "maxWidth":"1300px",
-          "position": "fixed",
-          "top": "15px",
-          "left": "50%",
-          "transform": "translateX(-50%)",
-          "display": "flex"
+  "headerTypes": [
+    {
+      "name": "default",
+      "description": "Estilo de encabezado estándar",
+      "style": {
+        "borderRadius": "20px",
+        "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.15)",
+        "padding": "1.5rem 3rem",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "border": "0.1px solid",
+        "maxWidth": "1600px",
+        "position": "fixed",
+        "top": "15px",
+        "left": "50%",
+        "transform": "translateX(-50%)",
+        "display": "flex",
+        "navAnimation": {
+          "initial": {
+            "width": "90vw",
+            "padding": "1.5rem 3rem"
+          },
+          "animate": {
+            "width": "calc(100% - 40px)",
+            "padding": "1rem 2rem",
+            "opacity": 0.9,
+            "boxShadow": "0 10px 25px rgba(0, 0, 0, 0.2)"
+          },
+          "transition": {
+            "duration": 0.3
+          }
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "name": "sliding",
+      "description": "Encabezado con animación de deslizamiento desde arriba",
+      "style": {
+        "borderRadius": "15px",
+        "boxShadow": "0 4px 10px rgba(0, 0, 0, 0.2)",
+        "padding": "1rem 2rem",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "border": "2px solid",
+        "maxWidth": "1500px",
+        "position": "fixed",
+        "top": "10px",  
+        "left": "50%",
+        "transform": "translateX(-50%)",
+        "display": "flex",
+        "navAnimation": {
+          "initial": {
+            "width": "90%",
+            "padding": "1.5rem 3rem",
+            "opacity": 0,
+            "top": "-100px",  
+            "transform": "translateX(-50%)"  
+          },
+          "animate": {
+            "width": "100%",
+            "padding": "1.2rem 2.5rem",
+            "opacity": 1,
+            "top": "10px",  
+            "transform": "translateX(-50%)"  
+          },
+          "transition": {
+            "duration": 0.5
+          }
+        }
+      }
+    }
+    ,    
+    {
+      "name": "fadeIn",
+      "description": "Encabezado con animación de desvanecimiento",
+      "style": {
+        "borderRadius": "25px",
+        "boxShadow": "0 4px 15px rgba(0, 0, 0, 0.3)",
+        "padding": "1.2rem 3rem",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "border": "2px solid",
+        "maxWidth": "1400px",
+        "position": "fixed",
+        "top": "10px",
+        "left": "50%",
+        "transform": "translateX(-50%)",
+        "display": "flex",
+        "navAnimation": {
+          "initial": {
+            "width": "90vw",
+            "padding": "1.5rem 3rem",
+            "opacity": 0
+          },
+          "animate": {
+            "width": "calc(100% - 40px)",
+            "padding": "1rem 2rem",
+            "opacity": 1
+          },
+          "transition": {
+            "duration": 3
+          }
+        }
+      }
+    }
+  ]
+}
