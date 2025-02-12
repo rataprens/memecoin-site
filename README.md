@@ -12,6 +12,10 @@ The ultimate CLI tool to create sleek, customizable websites for your memecoin i
 - **Dynamic content:** Add tokenomics, roadmaps, and step-by-step guides for users.
 - **Quick setup:** Get your site up and running in seconds.
 
+## Demo
+
+You can see a live demo of the memecoin site generator [here](https://demo-memecoin.netlify.app/).
+
 ## 🛠 Installation
 
 ### Using npx (recommended)
