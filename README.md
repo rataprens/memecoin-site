@@ -42,6 +42,9 @@ create-memecoin-site
 2. **Customize your site:** Choose a theme, blockchain, and background shape.
 3. **Generate your template:** The tool creates a ready-to-use Gatsby project tailored to your memecoin.
 
+ ![CLI-demo](https://github.com/user-attachments/assets/d06d855e-b5a0-461f-99bf-129980d610a4)
+
+
 ## 🎨 Features
 
 - **Themes:** deepSea, dark, light, cyberpunk, matrix, and more.
