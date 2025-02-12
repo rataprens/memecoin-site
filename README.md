@@ -110,6 +110,7 @@ In the `pages/index.tsx` file, you will find the following lines:
 <ThemeSelectorFloating></ThemeSelectorFloating> 
 <ClearStorageButton></ClearStorageButton> */}
 ```
+   ![selector-tools1](https://github.com/user-attachments/assets/f96b782a-1122-415d-8f25-5f2915009e4e)
 
 > **⚠️ Note:**  
 > For development purposes only, remove the comments around these lines to enable the live theme selector. In production, be sure to comment these lines back to prevent any changes.
