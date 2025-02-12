@@ -1,64 +1,17 @@
 import { useEffect, useState } from "react";
 import siteConfigJson from "../config/siteConfig.json";
-import themeConfigJson from "../config/themeConfig.json"
-
-// Definir los nombres de temas válidos
-type ThemeName = "dark" | "light" | "blue";
-
-// Interfaz para los valores de los temas
-interface Theme {
-  background: string;
-  primary: string;
-  text: string;
-  buttonBackground: string;
-  buttonText: string;
-}
-
-// Definir los posibles "shapes"
-type Shape =
-  | "circle"
-  | "triangle"
-  | "square"
-  | "hexagon"
-  | "diamond"
-  | "star"
-  | "heart"
-  | "pentagon"
-  | "ellipse"
-  | "wave";
-
-// Definir la estructura completa de siteConfig
-interface SiteConfig {
-  siteName: string;
-  coinName: string;
-  coinSymbol: string;
-  contractAddress: string;
-  siteTitle: string;
-  selectedTheme: string;
-  selectedBlockchain: string; 
-  blockchainInstructions: Record<string, any>;
-  tokenSupply: string;
-  taxes: string;
-  burntLP: string;
-  homeDescription: string;
-  aboutDescription: string;
-  roadmap: {
-    title: string;
-    phases: Array<{
-      phase: string;
-      description: string;
-    }>;
-    disclaimer: string;
-  };
-  footerDescription: string;
-  backgroundShape:string;
-}
+import themeConfigJson from "../config/themeConfig.json";
+import siteHeaderConfigJson from "../config/siteHeaderConfig.json";
+import { ThemeName } from "../types/themeTypes";
+import { Shape } from "../types/shapeTypes";
+import ISiteConfig from "../interfaces/ISiteConfig";
+import ITheme from "../interfaces/ITheme";
 
 // Obtener los temas de siteConfig con validación de tipo
-const themes: Record<ThemeName, Theme> = themeConfigJson.themes;
+const themes: Record<ThemeName, ITheme> = themeConfigJson.themes;
 
 // Verificar que el tema seleccionado sea válido, si no, usar un tema por defecto
-const getValidTheme = (themeName: string): Theme => {
+const getValidTheme = (themeName: string): ITheme => {
   return themes[themeName as ThemeName] || themes.dark; // Default a "dark" si es inválido
 };
 
@@ -71,23 +24,35 @@ const getValidShape = (shape: string): Shape => {
     "hexagon",
     "diamond",
     "star",
-    "pentagon"
+    "pentagon",
   ];
 
   return validShapes.includes(shape as Shape) ? (shape as Shape) : "circle"; // Default a "circle" si es inválido
 };
 
+// Obtener los tipos de encabezado desde el JSON
+const headerTypes = siteHeaderConfigJson.headerTypes.map((header) => header.name);
+
+// Verificar que el tipo de encabezado seleccionado sea válido
+const getValidHeaderType = (headerType: string): string => {
+  return headerTypes.includes(headerType) ? headerType : "default"; // Default a "default" si es inválido
+};
 
 export const useConfig = () => {
-  // Obtener el tema guardado en localStorage o usar el del JSON
-  const siteConfig: SiteConfig = siteConfigJson; 
+  // Obtener la configuración desde JSON
+  const siteConfig: ISiteConfig = siteConfigJson;
+  const siteHeaderConfig = siteHeaderConfigJson;
+
+  // Cargar valores guardados o usar los valores predeterminados
   const savedTheme = localStorage.getItem("selectedTheme") || siteConfigJson.selectedTheme;
   const savedShape = localStorage.getItem("selectedShape") || siteConfigJson.backgroundShape;
+  const savedHeaderType = localStorage.getItem("selectedHeaderType") || siteConfigJson.selectedHeader;
 
-  // Guardamos el tema y la forma seleccionados en estado separado
+  // Estados para el tema, la forma y el tipo de encabezado
   const [selectedTheme, setSelectedTheme] = useState<string>(savedTheme);
-  const [theme, setTheme] = useState<Theme>(getValidTheme(savedTheme));
+  const [theme, setTheme] = useState<ITheme>(getValidTheme(savedTheme));
   const [selectedShape, setSelectedShape] = useState<Shape>(getValidShape(savedShape));
+  const [selectedHeaderType, setSelectedHeaderType] = useState<string>(getValidHeaderType(savedHeaderType));
 
   // Función para actualizar el tema
   const updateTheme = (themeName: ThemeName) => {
@@ -104,21 +69,42 @@ export const useConfig = () => {
     localStorage.setItem("selectedShape", shape);
   };
 
+  // Función para actualizar el tipo de encabezado
+  const updateHeaderType = (headerType: string) => {
+    const validHeader = getValidHeaderType(headerType);
+    setSelectedHeaderType(validHeader);
+    localStorage.setItem("selectedHeaderType", validHeader);
+  };
+
   useEffect(() => {
     const storedTheme = localStorage.getItem("selectedTheme");
     if (storedTheme) {
       setSelectedTheme(storedTheme);
       setTheme(getValidTheme(storedTheme));
     }
+
+    const storedShape = localStorage.getItem("selectedShape");
+    if (storedShape) {
+      setSelectedShape(getValidShape(storedShape));
+    }
+
+    const storedHeaderType = localStorage.getItem("selectedHeaderType");
+    if (storedHeaderType) {
+      setSelectedHeaderType(getValidHeaderType(storedHeaderType));
+    }
   }, []);
 
   return {
     siteConfig,
+    siteHeaderConfig,
     theme,
-    updateTheme, // Función para actualizar el tema
-    themes,      // Los temas definidos en siteConfig.json
-    selectedTheme, // El tema actualmente seleccionado (guardado en localStorage)
-    selectedShape, // La forma actualmente seleccionada
-    updateShape,   // Función para actualizar la forma
+    themes,
+    selectedTheme,
+    selectedShape,
+    selectedHeaderType,
+    headerTypes,
+    updateTheme,
+    updateShape,
+    updateHeaderType,
   };
 };

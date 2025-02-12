@@ -1,0 +1,77 @@
+{
+    "headerTypes": [
+      {
+        "name": "default",
+        "description": "Estilo de encabezado estándar",
+        "style": {
+          "borderRadius": "20px",
+          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.15)",
+          "padding": "1.5rem 3rem",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "border":"0.1px solid",
+          "maxWidth":"1600px",
+          "position": "fixed",
+          "top": "15px",
+          "left": "50%",
+          "transform": "translateX(-50%)",
+          "display": "flex"
+        }
+      },
+      {
+        "name": "minimal",
+        "description": "Encabezado minimalista con borde inferior",
+        "style": {
+          "borderRadius": "10px",
+          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.12)",
+          "padding": "0 1.5rem",
+          "alignItems": "center",
+          "justifyContent": "flex-start",
+          "border":"1px solid",
+          "maxWidth":"1500px",
+          "position": "fixed",
+          "top": "15px",
+          "left": "50%",
+          "transform": "translateX(-50%)",
+          "display": "flex"
+        }
+      },
+      {
+        "name": "compact",
+        "description": "Encabezado compacto con logo grande",
+        "style": {
+          "borderRadius": "12px",
+          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.2)",
+          "padding": "0 1rem",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "border":"3px solid",
+          "maxWidth":"1400px",
+          "position": "fixed",
+          "top": "15px",
+          "left": "50%",
+          "transform": "translateX(-50%)",
+          "display": "flex"
+        }
+      },
+      {
+        "name": "extended",
+        "description": "Encabezado más grande con espacio extra",
+        "style": {
+          "borderRadius": "50px",
+          "boxShadow": "0 6px 12px rgba(0, 0, 0, 0.1)",
+          "padding": "0 3rem",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "border":"5px solid",
+          "maxWidth":"1300px",
+          "position": "fixed",
+          "top": "15px",
+          "left": "50%",
+          "transform": "translateX(-50%)",
+          "display": "flex"
+        }
+      }
+    ]
+  }
+  

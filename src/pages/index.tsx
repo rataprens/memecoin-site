@@ -61,6 +61,7 @@ const IndexPage: React.FC = () => {
 
   // Verificar que el config tenga la propiedad 'theme' y usarla, si no, usar un valor predeterminado
   const theme = config?.theme || defaultTheme;
+  const marqueeText = config?.siteConfig.marqueeText || [];
 
   useEffect(() => {
     // Solo carga el valor desde localStorage al montar el componente
@@ -83,12 +84,7 @@ const IndexPage: React.FC = () => {
         <HomeSection id="home" />
         <StyledMarqueeContainer>
           <MarqueeText
-            textList={[
-              "🚀 New Features Released!",
-              "🔥 Hot Deals Available Now!",
-              "🌟 Join Our Community!",
-              "🎉 Don't Miss Out!"
-            ]}
+            textList={marqueeText}
             speed={12}
           />
         </StyledMarqueeContainer>
@@ -98,9 +94,9 @@ const IndexPage: React.FC = () => {
         <RoadmapSection id="roadmap" />
       </Main>
       <Footer />
-      <ShapeSelectorFloating onShapeChange={handleShapeChange} />
-      <ThemeSelectorFloating></ThemeSelectorFloating> {/* comentar en caso de no utilizarlo en produccion */}
-      <ClearStorageButton></ClearStorageButton>
+    {/* <ShapeSelectorFloating onShapeChange={handleShapeChange} />
+      <ThemeSelectorFloating></ThemeSelectorFloating> 
+      <ClearStorageButton></ClearStorageButton> */}
     </>
   );
 };

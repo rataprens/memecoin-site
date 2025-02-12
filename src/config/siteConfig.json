@@ -7,8 +7,9 @@
   "footerDescription": "© 2024 by memecoin, All rights reserved!",
   "homeDescription": "The most memeable memecoin in existence. The dogs have had their day.",
   "aboutDescription": "This is your chance to shine! Write an epic and captivating description that truly captures the essence of your memecoin. Be creative, make it unforgettable, and ensure no one can ignore it!",
-  "selectedTheme": "deepSea",
-  "selectedBlockchain": "solana",
+  "selectedTheme": "dark",
+  "selectedHeader": "default",
+  "selectedBlockchain": "ethereum",
   "tokenSupply": "420,690,000,000,001",
   "taxes": "No taxes, No Bullshit",
   "burntLP": "LP tokens are burnt, and contract ownership is renounced.",
@@ -29,7 +30,8 @@
         {
           "icon": "FaExchangeAlt",
           "title": "Go to Uniswap",
-          "description": "Connect your wallet and paste the $memecoin contract address."
+          "description": "Connect your wallet and paste the $memecoin contract address.",
+          "url": "https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency="
         },
         {
           "icon": "FaCheckCircle",
@@ -48,12 +50,13 @@
         {
           "icon": "FaMoney",
           "title": "Get Some SOL",
-          "description": "Fund your wallet with SOL on a platform like Raydium."
+          "description": "Fund your wallet with SOL on a platform like Jupiter."
         },
         {
           "icon": "FaExchangeAlt",
-          "title": "Go to Raydium",
-          "description": "Connect your wallet and find the $memecoin token."
+          "title": "Go to Jupiter",
+          "description": "Connect your wallet and find the $memecoin token.",
+          "url": "https://jup.ag/swap/SOL-"
         },
         {
           "icon": "FaCheckCircle",
@@ -80,5 +83,11 @@
       }
     ],
   "disclaimer": "$memecoin has no association with any official entity. This token is simply paying homage to a meme we all love." 
-  }
+  },
+  "marqueeText": [
+    "🚀 New Features Released!",
+    "🔥 Hot Deals Available Now!",
+    "🌟 Join Our Community!",
+    "🎉 Don't Miss Out!"
+  ]
 }
