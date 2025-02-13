@@ -12,6 +12,10 @@ The ultimate CLI tool to create sleek, customizable websites for your memecoin i
 - **Quick setup:** Get your site up and running in seconds.
 - **More than 100 themes available!**
 
+## 🎉 Free and Always Will Be!
+
+**Yes, you read that right!** `create-memecoin-site` is completely free to use, and it will always remain free. No hidden fees, no subscriptions. Just pure, unadulterated freedom to create your memecoin website.
+
 ## Demo
 
 You can see a live demo of the memecoin site generator [here](https://demo-memecoin.netlify.app/).
@@ -43,7 +47,6 @@ create-memecoin-site
 3. **Generate your template:** The tool creates a ready-to-use Gatsby project tailored to your memecoin.
 
  ![CLI-demo](https://github.com/user-attachments/assets/d06d855e-b5a0-461f-99bf-129980d610a4)
-
 
 ## 🎨 Features
 
@@ -126,6 +129,12 @@ MIT License. Free to use, modify, and share.
 ## 🙌 Contribute
 
 Found a bug or have an idea? Open an issue or submit a pull request!
+
+## 💖 Donations
+
+If you find this tool useful and would like to support its development, consider making a donation. Your support is greatly appreciated!
+
+**Donate to this wallet:** `J9pd8y7rwe6Sn7dbzHM51oHL94zJbFmHBMjfCkLyawNM`
 
 ---
 
